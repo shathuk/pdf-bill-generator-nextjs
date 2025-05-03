@@ -75,7 +75,7 @@ export default function Home() {
       styles: { fontSize: 10 },
       headStyles: { fillColor: [220, 220, 220] },
     });
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const finalY = (doc as any).lastAutoTable?.finalY || 80;
 
     autoTable(doc, {
@@ -97,7 +97,7 @@ const finalY = (doc as any).lastAutoTable?.finalY || 80;
       },
       margin: { left: 125 },
     });
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const bankNoteStart = (doc as any).lastAutoTable?.finalY + 15;
     doc.setFontSize(10);
     doc.text(
