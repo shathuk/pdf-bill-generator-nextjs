@@ -49,16 +49,16 @@ export default function Home() {
 
     const doc = new jsPDF();
 
-    doc.setFontSize(16).setFont(undefined, 'bold');
+    doc.setFontSize(16).setFont('helvetica', 'bold');
     doc.text('RAMESH INTERNATIONAL', 105, 15, { align: 'center' });
-    doc.setFontSize(11).setFont(undefined, 'normal');
+    doc.setFontSize(11).setFont('helvetica', 'normal');
     doc.text('ramesh@rameshinternational.com', 105, 22, { align: 'center' });
 
-    doc.setFontSize(14).setFont(undefined, 'bold');
+    doc.setFontSize(14).setFont('helvetica', 'bold');
     doc.text('INVOICE', 105, 35, { align: 'center' });
     doc.line(95, 37, 115, 37);
 
-    doc.setFontSize(11).setFont(undefined, 'normal');
+    doc.setFontSize(11).setFont('helvetica', 'normal');
     doc.text(`Customer Name: Mr. / M/s ${customerName || '............................'}`, 14, 50);
     doc.text(`Date: ${date || '............'}`, 160, 50);
 
