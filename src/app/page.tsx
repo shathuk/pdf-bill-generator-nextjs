@@ -76,7 +76,7 @@ export default function Home() {
       headStyles: { fillColor: [220, 220, 220] },
     });
 
-    const finalY = doc.lastAutoTable.finalY || 80;
+const finalY = (doc as any).lastAutoTable?.finalY || 80;
 
     autoTable(doc, {
       startY: finalY + 10,
@@ -98,7 +98,7 @@ export default function Home() {
       margin: { left: 125 },
     });
 
-    const bankNoteStart = doc.lastAutoTable.finalY + 15;
+const bankNoteStart = (doc as any).lastAutoTable?.finalY + 15;
     doc.setFontSize(10);
     doc.text(
       'For bank transfers, please use the following account details and include the invoice number as the payment reference:',
