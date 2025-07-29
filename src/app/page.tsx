@@ -61,7 +61,7 @@ export default function Home() {
     doc.text('Postel Code: 117', 14, 25);
     doc.text('Muscat, Sultanate of Oman', 14, 30);
     doc.text('Phone: +968 78923239', 14, 35);
-    doc.text('VATIN No: QM1100320427', 14, 40);
+    doc.text('VATIN No: OM1100320427', 14, 40);
 
     // Company name in center
     doc.setFontSize(18).setFont('helvetica', 'bold');
